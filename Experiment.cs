@@ -1,5 +1,5 @@
 ﻿namespace _Experiment_;
-public class Experiment
+class Experiment
 {
     protected string nameOfLector;
     protected string discipline;
