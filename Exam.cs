@@ -1,17 +1,15 @@
-﻿using _Experiment_;
-namespace Experiment_;
-
+﻿namespace Experiment;
 class Exam : Experiment
 {
-    protected readonly int passingScore;
+    protected readonly int? passingScore;
 
-    protected Exam(string nameOfLector, string discipline, int evalua, int passingScore) : base(nameOfLector,
+    protected internal Exam(string nameOfLector, string discipline, int evalua, int passingScore) : base(nameOfLector,
         discipline, evalua)
     {
         this.passingScore = passingScore;
     }
 
-    static void PassedOrNot(ref Exam exam)
+   internal static void PassedOrNot(ref Exam exam)
     {
         if (exam.evalua >= exam.passingScore)
             Console.WriteLine("You are Passed");

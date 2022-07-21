@@ -1,5 +1,4 @@
-﻿using _Experiment_;
-namespace _Experiment;
+﻿namespace Experiment;
 class Test : Experiment
 {
     protected int numberOfTasks;

@@ -1,4 +1,4 @@
-﻿namespace _Experiment_;
+﻿namespace Experiment;
 class Experiment
 {
     protected string nameOfLector;
