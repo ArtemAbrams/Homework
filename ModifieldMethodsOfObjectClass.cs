@@ -16,9 +16,9 @@ public class ModifiedMethodsOfObjectClass
     }
     public override string? ToString()
     {
-        return String.IsNullOrEmpty(name) & String.IsNullOrEmpty(surname) & String.IsNullOrEmpty(YourPetIs)
-            ? (name + " " + surname + " pet " + YourPetIs)
-            : "Valid value";
+        return (String.IsNullOrEmpty(name) || String.IsNullOrEmpty(surname)) || String.IsNullOrEmpty(YourPetIs)
+            ? "Valid value"
+            : (name + " " + surname + " pet " + YourPetIs);
     }
 
     public override bool Equals(object? obj)
