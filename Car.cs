@@ -2,9 +2,9 @@
 
 class Car: Transport
 {
-    internal string name;
-    internal string mark;
-    internal override string code
+    public string name;
+    public string mark;
+    public override string code
     {
         get
         {
@@ -17,7 +17,7 @@ class Car: Transport
         }
     }
 
-    internal Car (int price, string mark, string name) : base(price)
+    public Car (int price, string mark, string name) : base(price)
     {
         this.name = name;
         this.mark = mark;

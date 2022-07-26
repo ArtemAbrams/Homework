@@ -2,9 +2,9 @@
 
 abstract class Transport
 { 
-    internal readonly int price;
+    public readonly int price;
 
-    internal virtual string code
+    public virtual string code
     {
         get
         {
@@ -15,7 +15,7 @@ abstract class Transport
             code = value;
         }
     }
-    internal Transport(int price)
+    public Transport(int price)
     {
         this.price = price;
     }

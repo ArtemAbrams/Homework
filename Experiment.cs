@@ -1,15 +1,15 @@
 ﻿namespace Experiment;
 class Experiment
 {
-    protected string nameOfLector;
-    protected string discipline;
-    protected int evalua;
+    public string nameOfLector;
+    public string discipline;
+    public int evalua;
 
-    protected Experiment()
+    public Experiment()
     {
             
     }
-    protected Experiment(string nameOfLector, string discipline, int evalua)
+    public Experiment(string nameOfLector, string discipline, int evalua)
     {
         this.nameOfLector = nameOfLector;
         this.discipline = discipline;
