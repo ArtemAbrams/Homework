@@ -1,13 +1,12 @@
 ﻿namespace Experiment;
-
-class Person <T, P > where T: Test
+class Person<T, P> where T : Test
 {
   public T test;
   public P id;
   public P phoneNumber;
   public string name;
 
-  public Person(T test, P id, P phoneNumber, string name)
+  public Person(T test, string name, P id, P phoneNumber)
   {
     this.test = test;
     this.id = id;
