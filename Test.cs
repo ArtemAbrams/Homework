@@ -13,4 +13,14 @@ class Test : Experiment
         this.numberOfTasks = numberOfTasks;
         this.typeOfQuestion = typeOfQuestion;
     }
+
+    public void Print()
+    {
+        Console.WriteLine("The test is start");
+    }
+
+    public void PrintInformation()
+    {
+        Console.WriteLine("The name of Lector" + nameOfLector + "\n " + " the discipline " + discipline + "\n" + " the value "+ evalua);
+    }
 }
