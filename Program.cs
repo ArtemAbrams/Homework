@@ -6,8 +6,11 @@ try
 {
     Console.WriteLine(x / y);
 }
-catch when (x==0 || y==0)
+catch (Exception ex) when (x==0 || y==0)
 {
+    Console.WriteLine(ex.Message);
+    Console.WriteLine(ex.StackTrace);
+    Console.WriteLine(ex.TargetSite);
     Console.WriteLine("The mistake ");
 }
 finally
