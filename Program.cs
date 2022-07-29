@@ -1,12 +1,12 @@
 ﻿using Experiment;
 
+int x = 0;
+int y = 0;
 try
 {
-    int x = 0;
-    int y = 0;
     Console.WriteLine(x / y);
 }
-catch 
+catch when (x==0 || y==0)
 {
     Console.WriteLine("The mistake ");
 }
