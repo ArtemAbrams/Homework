@@ -29,6 +29,7 @@ public class ExceptionClassAlcohol
         {
             foreach (var j in numeric)
             {
+                Console.WriteLine(j);
                 if (i == j)
                 {
                     throw new Exception("You use numeric");
