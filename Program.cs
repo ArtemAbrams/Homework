@@ -1,20 +1,27 @@
 ﻿using Experiment;
 
-int x = 0;
-int y = 0;
-try
+void Numeric(int x)
 {
-    Console.WriteLine(x / y);
+    if (x >= 0)
+    {
+        throw new Exception("The positive numeric");
+    }
 }
-catch (Exception ex) when (x==0 || y==0)
+try
+{   
+    int x = int.Parse(Console.ReadLine());
+    Numeric(x);
+   /* x = int.Parse(Console.ReadLine());
+    if (x >= 0)
+    {
+        throw new Exception("The positive numeric");
+    }*/
+    
+}
+catch (Exception ex) 
 {
     Console.WriteLine(ex.Message);
     Console.WriteLine(ex.StackTrace);
     Console.WriteLine(ex.TargetSite);
-    Console.WriteLine("The mistake ");
-}
-finally
-{
-    Console.WriteLine("The try-catch-finally block is end");
 }
 Console.WriteLine("The program is finish");
