@@ -3,7 +3,7 @@
 public class ExceptionClassAlcohol
 {
     public int age;
-
+    private char[] numeric = new char [10] {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}; 
     public string name { get; set; }
     public int Age
     {
@@ -23,23 +23,18 @@ public class ExceptionClassAlcohol
             return age;
         }
     }
-    public ExceptionClassAlcohol()
+    public ExceptionClassAlcohol(string name)
     {
-        string name;
-        long name_1;
-        while (true)
+        foreach (var i in name)
         {
-            try
+            foreach (var j in numeric)
             {
-                name = Console.ReadLine();
-                this.name = name;
-                name_1 = Convert.ToInt32(name);
-            }
-            catch (Exception ex)
-            {
-                break;
+                if (i == j)
+                {
+                    throw new Exception("You use numeric");
+                    break;
+                }
             }
         }
-        Console.WriteLine("Try-catch-finally bloc is finished");
     }
 }
